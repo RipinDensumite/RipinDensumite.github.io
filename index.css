@@ -1,0 +1,52 @@
+button {
+    border-style: dashed;
+    background-color: white;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
+    transition: 0.5s;
+    transition-timing-function: ease;
+    height: 55px;
+    width: 200px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    height: 70px;
+    width: 250px;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.first-div {
+    text-align: center;
+}
+
+/*Background Video*/
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
